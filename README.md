@@ -1,9 +1,9 @@
 # Exo Mindset Challenge
 
 ## Consideraciones
-- Para el consumo de la API de Openweather se creó un plugin encapsulado con la idea de poder reutilizarlo.
-- El servicio que evalua la temperatura recibe latitud y longitud por query. Se pensó así con el fin de usarse con otras ciudades además de Rio Cuarto. Además, es un microservicio que podría usarse en otros proyectos
-- Respecto a los test unitarios, no se cubrió todo el coverage pero se hicieron tests completos del plugin de Openweather
+- Para el uso de la API de Openweather se creó un plugin encapsulando toda la lógica, siguiendo la filosofía de Fastify, para luego poder ser reutilizado.
+- El servicio que evalua la temperatura recibe latitud y longitud por query. Se diseñó así con el fin de usarse con otras ciudades además de Rio Cuarto. Además, es un microservicio que podría usarse en otros proyectos
+- Respecto a los test unitarios, no está cubierto el 100% del coverage pero si se hicieron todos los tests del plugin de Openweather entre otros
 
 ## Instalación
 Copiar archivo `.env` en la raiz del proyecto, luego ejecutar `npm install` y `npm run dev`
