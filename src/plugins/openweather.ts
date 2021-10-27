@@ -11,6 +11,7 @@ export default fp<any>(async (fastify, opts) => {
                 try {
                     const response = await fetch(`${apiUrl}?lat=${lat}&lon=${lon}&appid=${appId}&units=${units}&exclude=${exclude}`)
                     const data = await response.json()
+                    
                     if (data.current) {
                         return data.current
                     } else {

@@ -28,11 +28,16 @@ const temperatureRoute: FastifyPluginAsync = async (fastify, opts): Promise<void
         })
       }
     } catch (error: any) {
+      console.log("error")
+      console.log(error)
+      console.log(error.message)
       return reply.code(500).send({
         error: error.message
       })
     }
   })
 }
+
+
 
 export default temperatureRoute;

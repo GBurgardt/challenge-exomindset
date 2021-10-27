@@ -5,8 +5,8 @@ import * as tap from 'tap';
 
 export type Test = typeof tap['Test']['prototype'];
 
-async function config () {
-  return {}
+async function config (): Promise<any> {
+  return { }
 }
 
 async function build (t: Test) {
